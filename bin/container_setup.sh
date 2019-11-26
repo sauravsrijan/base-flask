@@ -19,8 +19,8 @@ curl https://bootstrap.pypa.io/get-pip.py | python3.8
 pip3 install -r requirements.txt
 
 # Set up node
-curl -sL https://deb.nodesource.com/setup_11.x | bash -
-apt-get install nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+apt-get install -y nodejs
 npm install
 
 # Set up supervisor
