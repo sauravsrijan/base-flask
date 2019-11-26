@@ -10,15 +10,14 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Install updates and system packages
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
     build-essential \
+    gcc \
+    git
     locales \
     software-properties-common \
-    gcc \
-    curl \
     supervisor \
-    git
 
 # Set up directory structures
 RUN mkdir -p /var/www/app
